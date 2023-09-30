@@ -1033,7 +1033,7 @@ class POEntry(_BaseEntry):
                     filelist.append('%s:%s' % (fpath, lineno))
                 else:
                     filelist.append(fpath)
-           for i in range(0,len(filelist),2):
+            for i in range(0,len(filelist),2):
                 filestr = filelist[i]+' '+filelist[i+1]
                 if wrapwidth > 0 and len(filestr) + 3 > wrapwidth:
                 # textwrap split words that contain hyphen, this is not
